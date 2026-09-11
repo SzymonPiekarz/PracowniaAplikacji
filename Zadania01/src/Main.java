@@ -41,4 +41,22 @@ void main() {
     String slowo100 = sc.nextLine();
     int liczba_znakow = slowo100.length();
     System.out.println("Podane słowo składa się z "+liczba_znakow+" liter");
+
+
+    double x = 5;
+    double y = 2;
+    double wynik = x / y;
+    System.out.println("Wynik 8 zadamia to: "+wynik);
+
+
+    System.out.println("Podaj słowo: ");
+    String male =sc.nextLine();
+    String duze = male.toUpperCase();
+    System.out.println(duze);
+
+
+    System.out.println("Podaj promień: ");
+    int promien = sc.nextInt();
+    double pole = 3.14*promien*promien;
+    System.out.println("Pole koła to: "+pole);
 }
