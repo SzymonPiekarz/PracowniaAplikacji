@@ -17,4 +17,12 @@ void main() {
     double Fahrenheit = 1.8 * temperatura+32;
     System.out.println("Stpnie Celcjusza: "+temperatura+", stopnie Farehita: "+Fahrenheit+".");
 
+
+    System.out.println("Podaj bok trojkata: ");
+    double bok1 = sc.nextInt();
+    System.out.println("Podaj drugi bok trojkata: ");
+    double bok2 = sc.nextInt();
+    System.out.println("Podaj trzeci bok trojkata: ");
+    double bok3 = sc.nextInt();
+    System.out.println("Obwód podanego trójkąta to: "+(bok1+bok2+bok3)+"");
 }
