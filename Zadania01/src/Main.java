@@ -35,4 +35,10 @@ void main() {
     System.out.println("Podaj trzecie słowo: ");
     String slowo3 = sc.nextLine();
     System.out.println("Twoje zdanie:"+slowo3+","+slowo2+","+slowo1+"");
+
+
+    System.out.println("Podaj słowo: ");
+    String slowo100 = sc.nextLine();
+    int liczba_znakow = slowo100.length();
+    System.out.println("Podane słowo składa się z "+liczba_znakow+" liter");
 }
