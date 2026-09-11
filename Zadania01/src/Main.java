@@ -25,4 +25,14 @@ void main() {
     System.out.println("Podaj trzeci bok trojkata: ");
     double bok3 = sc.nextInt();
     System.out.println("Obwód podanego trójkąta to: "+(bok1+bok2+bok3)+"");
+
+
+    System.out.println("Podaj pierwsze słowo: ");
+    sc.nextLine();
+    String slowo1 = sc.nextLine();
+    System.out.println("Podaj drugie słowo: ");
+    String slowo2 = sc.nextLine();
+    System.out.println("Podaj trzecie słowo: ");
+    String slowo3 = sc.nextLine();
+    System.out.println("Twoje zdanie:"+slowo3+","+slowo2+","+slowo1+"");
 }
