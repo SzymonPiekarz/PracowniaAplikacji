@@ -39,7 +39,7 @@ void main() {
         }
     }
     System.out.println("Program wypisuje większą liczbe z dwóch podanych");
-    System.out.println("Podaj liczbe pierwszą: ");
+    System.out.println("Podaj pierwszą liczbe: ");
     int podaj1 = sc.nextInt();
     System.out.println("Ppdja drugą liczbe: ");
     int podaj2 = sc.nextInt();
@@ -48,4 +48,19 @@ void main() {
     }else {
         System.out.println("Liczba "+podaj2+" jest większa");
     }
+    System.out.println("Program wypisuje największą liczbe z trzech podanych");
+    System.out.println("Podaj pierwszą liczbe: ");
+    int podaj3 = sc.nextInt();
+    System.out.println("Podaj drugą liczbe: ");
+    int podaj4 = sc.nextInt();
+    System.out.println("Podaj trzecią liczbe: ");
+    int podaj5 = sc.nextInt();
+    if(podaj3>podaj4 && podaj3>podaj5){
+        System.out.println("Liczba "+podaj3+" jest większa");
+    } else if (podaj4>podaj3 && podaj4>podaj5) {
+        System.out.println("Liczba "+podaj4+" jest większa");
+    }else {
+        System.out.println("Liczba "+podaj5+" jest większa");
+    }
+    
 }
