@@ -92,5 +92,8 @@ void main() {
         System.out.println("Nie mamy takiego samego imienia :(");
     }
 
-    
+    System.out.print("Podaj swoj wiek: ");
+    int wiek = sc.nextInt();
+    boolean pelnoletni = wiek >= 18 ? true : false;
+    System.out.println("Czy jestes pelnoletni? " + pelnoletni);
 }
