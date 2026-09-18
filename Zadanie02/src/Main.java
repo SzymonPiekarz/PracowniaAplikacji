@@ -38,5 +38,14 @@ void main() {
             }
         }
     }
-    
+    System.out.println("Program wypisuje większą liczbe z dwóch podanych");
+    System.out.println("Podaj liczbe pierwszą: ");
+    int podaj1 = sc.nextInt();
+    System.out.println("Ppdja drugą liczbe: ");
+    int podaj2 = sc.nextInt();
+    if (podaj1>podaj2){
+        System.out.println("Liczba "+podaj1+" jest większa");
+    }else {
+        System.out.println("Liczba "+podaj2+" jest większa");
+    }
 }
