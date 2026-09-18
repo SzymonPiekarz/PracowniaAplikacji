@@ -23,4 +23,20 @@ void main() {
     }else {
         System.out.println("Liczba "+liczba3+" nie jest podziela przez 3");
     }
+    System.out.println("Podaj bok trójkąta:");
+    int bok1 = sc.nextInt();
+    System.out.println("Podaj drugi bok trójkąta:");
+    int bok2 = sc.nextInt();
+    System.out.println("Podaj trzeci bok trójkąta:");
+    int bok3 = sc.nextInt();
+    if (bok1 + bok2>bok3){
+        if (bok1+bok3>bok2){
+            if(bok2+bok3>bok1){
+                System.out.println("Z podanych bloków można zbudować trójkąta");
+            }else {
+                System.out.println("Z podanych bloków nie można zbudować trójkąta");
+            }
+        }
+    }
+    
 }
