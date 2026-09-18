@@ -96,4 +96,86 @@ void main() {
     int wiek = sc.nextInt();
     boolean pelnoletni = wiek >= 18 ? true : false;
     System.out.println("Czy jestes pelnoletni? " + pelnoletni);
+
+    System.out.print("Podaj rok: ");
+    int rok = sc.nextInt();
+    if ((rok % 4 == 0 && rok % 100 != 0) || rok % 400 == 0) {
+        System.out.println("Podany rok jest przestepny");
+    } else {
+        System.out.println("Podany rok nie jest przestepny");
+    }
+
+    System.out.print("Podaj swoja wage w kg: ");
+    double waga = sc.nextDouble();
+    System.out.print("Podaj swoj wzrost w metrach: ");
+    double wzrost = sc.nextDouble();
+    double bmi = waga / (wzrost * wzrost);
+    System.out.println("Twoje BMI wynosi: " + bmi);
+    if (bmi < 18.5) {
+        System.out.println("Niedowaga");
+    } else if (bmi <= 24.9) {
+        System.out.println("Waga prawidlowa");
+    } else {
+        System.out.println("Nadwaga");
+    }
+
+    double cena;
+    int raty;
+    while (true) {
+        System.out.print("Podaj cene towaru (100 - 10000 zl): ");
+        cena = sc.nextDouble();
+
+        if (cena >= 100 && cena <= 10000) {
+            break;
+        }
+        System.out.println("Bledna cena! Podaj ponownie.");
+    }
+    while (true) {
+        System.out.print("Podaj liczbe rat (6 - 48): ");
+        raty = sc.nextInt();
+        if (raty >= 6 && raty <= 48) {
+            break;
+        }
+        System.out.println("Bledna liczba rat! Podaj ponownie.");
+    }
+    double oprocentowanie;
+    if (raty >= 6 && raty <= 12) {
+        oprocentowanie = 0.025;
+    } else if (raty >= 13 && raty <= 24) {
+        oprocentowanie = 0.05;
+    } else {
+        oprocentowanie = 0.10;
+    }
+    double kwotaZOdsetkami = cena + (cena * oprocentowanie);
+    double rata = kwotaZOdsetkami / raty;
+    System.out.println("Miesieczna rata wynosi: " + rata + " zl");
+
+
+    System.out.println("Prosty kalkulator");
+    System.out.print("Podaj pierwsza liczbe: ");
+    double liczba1 = sc.nextDouble();
+    System.out.print("Podaj symbol operacji (+, -, *, /): ");
+    char operacja = sc.next().charAt(0);
+    System.out.print("Podaj druga liczbe: ");
+    double liczba2 = sc.nextDouble();
+    switch (operacja) {
+        case '+':
+            System.out.println("Wynik: " + (liczba1 + liczba2));
+            break;
+        case '-':
+            System.out.println("Wynik: " + (liczba1 - liczba2));
+            break;
+        case '*':
+            System.out.println("Wynik: " + (liczba1 * liczba2));
+            break;
+        case '/':
+            if (liczba2 == 0) {
+                System.out.println("Nie mozna dzielic przez zero");
+            } else {
+                System.out.println("Wynik: " + (liczba1 / liczba2));
+            }
+            break;
+        default:
+            System.out.println("Bledny symbol operacji");
+    }
 }
