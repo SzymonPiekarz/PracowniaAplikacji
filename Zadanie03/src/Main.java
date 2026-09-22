@@ -15,6 +15,13 @@ void main() {
         System.out.println(j+",");
     }
     //zadanie 3
-    
+    System.out.println("Program dodaje liczby do momentu podania liczby zero:");
+    int suma = 0;
+    int liczba;
+    do {
+        liczba = sc.nextInt();
+        suma+=liczba;
+    }while (liczba!=0);
+    System.out.println(suma);
 }
 
