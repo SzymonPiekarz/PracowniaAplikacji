@@ -153,11 +153,11 @@ void main() {
 
     System.out.println("Prosty kalkulator");
     System.out.print("Podaj pierwsza liczbe: ");
-    double liczba1 = sc.nextDouble();
+    double liczba11 = sc.nextDouble();
     System.out.print("Podaj symbol operacji (+, -, *, /): ");
     char operacja = sc.next().charAt(0);
     System.out.print("Podaj druga liczbe: ");
-    double liczba2 = sc.nextDouble();
+    double liczba22 = sc.nextDouble();
     switch (operacja) {
         case '+':
             System.out.println("Wynik: " + (liczba1 + liczba2));
