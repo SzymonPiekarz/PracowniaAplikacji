@@ -68,8 +68,28 @@ void main() {
     }
     }while(c !=random);
     System.out.println("Zgadłeś!!!!");
-
     System.out.println("----Zadanie 6----");
-    
+    System.out.println("Rysowanie prostokąta");
+    System.out.println("Podaj znak wypełnienia:");
+    char zn = sc.next().charAt(0);
+    System.out.println("Podaj x:");
+    int x6 = sc.nextInt();
+    System.out.println("Podaj y:");
+    int y6 = sc.nextInt();
+    System.out.println("Podaj długość boku a:");
+    int a6 = sc.nextInt();
+    System.out.println("Podaj długość boku b:");
+    int b6 = sc.nextInt();
+    for (int i6 = 1; i6 < y6; i6++) {
+        System.out.println();
+    }
+    for (int j6 = 0; j6 < b6; j6++) {
+        for (int k6 = 1; k6 < x6; k6++) {
+            System.out.print(" ");
+        }
+        for (int l6 = 0; l6 < a6; l6++) {
+            System.out.print(zn);
+        }
+        System.out.println();
+    }
 }
-
