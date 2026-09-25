@@ -92,4 +92,17 @@ void main() {
         }
         System.out.println();
     }
+
+    System.out.println("----Zadanie 7----");
+    System.out.println("Podaj wysokość choinki:");
+    int n7 = sc.nextInt();
+    for (int i7 = 1; i7 <= n7; i7++) {
+        for (int j7 = 1; j7 <= n7 - i7; j7++) {
+            System.out.print(" ");
+        }
+        for (int j7 = 1; j7 <= 2 * i7 - 1; j7++) {
+            System.out.print("*");
+        }
+        System.out.println();
+    }
 }
