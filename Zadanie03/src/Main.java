@@ -54,5 +54,22 @@ void main() {
     System.out.println("Suma to: "+suma1);
     System.out.println("Średnia to:"+srednia);
 
+    System.out.println("----Zadanie 5----");
+    System.out.println("Program zagra z tobą w 'Za dużo, za mało'");
+    int random = (int)(Math.random() * 101);
+    System.out.println("Zgaduj:");
+    int c;
+    do {
+    c = sc.nextInt();
+    if (c> random){
+        System.out.println("Za dużo");
+        }if (c< random) {
+            System.out.println("Za mało");
+    }
+    }while(c !=random);
+    System.out.println("Zgadłeś!!!!");
+
+    System.out.println("----Zadanie 6----");
+    
 }
 
