@@ -105,4 +105,12 @@ void main() {
         }
         System.out.println();
     }
+    System.out.println("----Zadanie 8----");
+    System.out.println("Podaj liczbę:");
+    int n8 = sc.nextInt();
+    int silnia = 1;
+    for (int i8 = 1; i8 <= n8; i8++) {
+        silnia = silnia * i8;
+    }
+    System.out.println("Silnia wynosi: " + silnia);
 }
