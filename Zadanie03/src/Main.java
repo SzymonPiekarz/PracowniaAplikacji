@@ -113,4 +113,28 @@ void main() {
         silnia = silnia * i8;
     }
     System.out.println("Silnia wynosi: " + silnia);
+
+    System.out.println("----Zadanie 9----");
+    System.out.println("Podaj słowo:");
+    String slowo = sc.next();
+    String odwrocone = new StringBuilder(slowo).reverse().toString();
+    if (slowo.equals(odwrocone)) {
+        System.out.println("To jest palindrom");
+    } else {
+        System.out.println("To nie jest palindrom");
+    }
+
+    System.out.println("----Zadanie 10----");
+    petlaGlowna:
+    for (int i10 = 1; i10 <= 10; i10++) {
+        if (i10 % 2 != 0) {
+            continue;
+        }
+        for (int j10 = 1; j10 <= 10; j10++) {
+            if (j10 > i10) {
+                continue petlaGlowna;
+            }
+            System.out.println(j10);
+        }
+    }
 }
